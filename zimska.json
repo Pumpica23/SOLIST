@@ -1,0 +1,62 @@
+{
+  "Crazy Santa": {
+    "sezona": "zima",
+    "kozarec": "whiskey",
+    "metoda": "shaken",
+    "led": "velika kocka",
+    "dekoracija": "kot v receptu",
+    "recept": {
+      "Jameson": "4 cl",
+      "Limonin sok": "2 cl",
+      "Sladkorni sirup": "2 cl",
+      "Cabernet Sauvignon": "4 cl"
+    },
+    "priprava": "Vse sestavine razen Cabernet Sauvignona pretresi z ledom, precedi v kozarec, plast Cabernet Sauvignona nalij s pomočjo žlice, okrasi z dehidrirano pomarančo."
+  },
+  "Gentleman Sour": {
+    "sezona": "zima",
+    "kozarec": "visok zimski kozarec",
+    "metoda": "vroče",
+    "led": "brez",
+    "dekoracija": "dehidrirana pomaranča",
+    "recept": {
+      "Martel VSOP": "3 cl",
+      "Havana 7": "3 cl",
+      "Limonin sok": "3 cl",
+      "Sladkorni sirup": "3 cl",
+      "Naravni jabolčni sok": "2 cl",
+      "Vrela voda": "10 cl",
+      "Klinčki": "2 kosa"
+    },
+    "priprava": "Vse sestavine nalij v servirni kozarec, dolij vrelo vodo, okrasi in postrezi."
+  },
+  "Penicilin": {
+    "sezona": "zima",
+    "kozarec": "whiskey",
+    "metoda": "shaken",
+    "led": "velika kocka",
+    "dekoracija": "kot v receptu",
+    "recept": {
+      "Four Roses": "4 cl",
+      "Limonin sok": "2 cl",
+      "Medeni sirup": "2 cl",
+      "Ingverjevo pivo": "10 cl",
+      "Kandiran ingver": "okrasek",
+      "Limonina lupina": "okrasek"
+    },
+    "priprava": "Vse sestavine razen ingverjevega piva pretresi z ledom, precedi v kozarec, dolij ingverjevo pivo, okrasi s kandiranim ingverjem na bambusovi palčki."
+  },
+  "Bombardino": {
+    "sezona": "zima",
+    "kozarec": "zimski kozarec",
+    "metoda": "vroče",
+    "led": "brez",
+    "dekoracija": "kot v receptu",
+    "recept": {
+      "Bombardino": "5 cl",
+      "Smetana": "okrasek",
+      "Cimet": "po vrhu"
+    },
+    "priprava": "Segrej bombardino s pomočjo parne šobe (očisti za seboj), nalij v kozarec, dodaj smetano, okrasi in postrezi."
+  }
+}
