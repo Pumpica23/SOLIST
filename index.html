@@ -11,6 +11,8 @@
             --background-color: #f8f9fa;
             --text-color: #2d3436;
             --card-bg: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         body {
@@ -25,19 +27,19 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 1rem;
         }
 
         .search-bar {
             position: relative;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         .search-input {
             width: 100%;
             padding: 0.8rem 1.5rem 0.8rem 3rem;
             border: 2px solid var(--primary-color);
-            border-radius: 25px;
+            border-radius: var(--border-radius);
             font-size: 1rem;
             transition: all 0.3s ease;
             outline: none;
@@ -59,63 +61,65 @@
 
         .cocktail-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
             padding: 1rem;
         }
 
         .cocktail-card {
             background: var(--card-bg);
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            box-shadow: var(--box-shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(255,255,255,0.3);
         }
 
         .cocktail-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
 
         .cocktail-header {
             display: flex;
             align-items: center;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
             border-bottom: 2px solid var(--primary-color);
         }
 
         .cocktail-name {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary-color);
             margin-left: 1rem;
         }
 
         .cocktail-info {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .cocktail-info h3 {
-            margin-top: 0.5rem;
+            margin-top: 0.25rem;
             color: var(--secondary-color);
             font-weight: 600;
+            font-size: 0.9rem;
         }
 
         .ingredients-list {
             list-style-type: none;
             padding: 0;
-            margin: 1rem 0;
+            margin: 0.5rem 0;
         }
 
         .ingredients-list li {
-            margin: 0.5rem 0;
-            padding-left: 2rem;
+            margin: 0.25rem 0;
+            padding-left: 1.5rem;
             position: relative;
             display: flex;
             align-items: center;
             color: #4a5568;
+            font-size: 0.9rem;
         }
 
         .ingredients-list li:before {
@@ -123,35 +127,64 @@
             position: absolute;
             left: 0;
             color: var(--primary-color);
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .preparation-steps {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
             color: white;
         }
 
         .preparation-steps h3 {
             color: white;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
 
         .icon {
-            width: 35px;
-            height: 35px;
-            margin-right: 1rem;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.75rem;
             object-fit: cover;
+            border-radius: 50%;
         }
 
         h1 {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: var(--primary-color);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-weight: 800;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+
+            .search-input {
+                padding: 0.6rem 1rem 0.6rem 2.5rem;
+                font-size: 0.9rem;
+            }
+
+            .cocktail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cocktail-card {
+                margin-bottom: 0.5rem;
+            }
+
+            .cocktail-name {
+                font-size: 1.3rem;
+            }
+
+            .ingredients-list li {
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -217,7 +250,7 @@
                 const cocktailCard = document.createElement('div');
                 cocktailCard.className = 'cocktail-card';
                 
-                cocktailCard.innerHTML = `
+                cocktailCard.innerHTML = ` 
                     <div class="cocktail-header">
                         <img src="https://cdn-icons-png.flaticon.com/512/2647/2647998.png" class="icon" alt="Koktel sklenica">
                         <span class="cocktail-name">${cocktailName}</span>
