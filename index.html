@@ -1,90 +1,287 @@
-<style>
-    :root {
-        --primary-color: #ff6b6b;
-        --secondary-color: #4ecdc4;
-        --background-color: #f8f9fa;
-        --text-color: #2d3436;
-        --card-bg: #ffffff;
-    }
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koktejl recepti</title>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --background-color: #f8f9fa;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
 
-    body {
-        font-family: 'Inter', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        line-height: 1.6;
-    }
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
 
-    .header-container {
-        background-color: var(--primary-color);
-        padding: 1.5rem 0;
-        margin-bottom: 2rem;
-        border-radius: 0 0 15px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        width: 100%;
-    }
-
-    .header-container h1 {
-        font-size: 2rem;
-        color: white;
-        text-shadow: 0 0 10px rgba(255,107,107,0.3);
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0;
-        white-space: nowrap;
-    }
-
-    /* Mobile adjustments */
-    @media (max-width: 768px) {
         .header-container {
-            padding: 1rem 0;
+            background-color: var(--primary-color);
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 15px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
         }
-        
+
         .header-container h1 {
-            font-size: 1.5rem;
+            font-size: 2rem;
+            color: white;
+            text-shadow: 0 0 10px rgba(255,107,107,0.3);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+            white-space: nowrap;
         }
-    }
 
-    .search-bar {
-        position: relative;
-        margin-bottom: 2rem;
-        width: 90%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 1rem 0;
+            }
+            
+            .header-container h1 {
+                font-size: 1.5rem;
+            }
+        }
 
-    .search-input {
-        width: 100%;
-        padding: 0.8rem 1.5rem 0.8rem 3rem;
-        border: 2px solid var(--primary-color);
-        border-radius: 25px;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-        outline: none;
-        box-sizing: border-box;
-    }
+        .search-bar {
+            position: relative;
+            margin-bottom: 2rem;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-    .search-input:focus {
-        border-color: var(--secondary-color);
-        box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
-    }
+        .search-input {
+            width: 100%;
+            padding: 0.8rem 1.5rem 0.8rem 3rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+            box-sizing: border-box;
+        }
 
-    .search-icon {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: var(--primary-color);
-        font-size: 1.2rem;
-    }
+        .search-input:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .cocktail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .cocktail-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .cocktail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .cocktail-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .cocktail-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-left: 1rem;
+        }
+
+        .cocktail-info {
+            margin-bottom: 1.5rem;
+        }
+
+        .cocktail-info h3 {
+            margin-top: 0.5rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .ingredients-list li {
+            margin: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: #4a5568;
+        }
+
+        .ingredients-list li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .preparation-steps {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            color: white;
+        }
+
+        .preparation-steps h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h1>KOKTEJL RECEPTI</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Išči koktel...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="cocktail-grid" id="cocktailGrid"></div>
+    </div>
+
+    <script>
+        let currentSortOrder = 'asc';
+        
+        async function loadCocktails() {
+            try {
+                const response = await fetch('zimska.json');
+                const data = await response.json();
+                
+                const cocktailGrid = document.getElementById('cocktailGrid');
+                cocktailGrid.innerHTML = '';
+
+                // Add search functionality
+                const searchInput = document.querySelector('.search-input');
+                searchInput.addEventListener('input', () => {
+                    filterCocktails(searchInput.value, data);
+                });
+
+                // Initial load
+                filterCocktails('', data);
+            } catch (error) {
+                console.error('Napaka pri nalaganju kokteljev:', error);
+                alert('Napaka pri nalaganju receptov kokteljev. Prosimo preverite, da je datoteka zimska.json v isti mapo.');
+            }
+        }
+
+        function filterCocktails(searchTerm, data) {
+            const cocktailGrid = document.getElementById('cocktailGrid');
+            cocktailGrid.innerHTML = '';
+
+            // Filter cocktails by name
+            const filteredCocktails = Object.entries(data)
+                .filter(([name, _]) => 
+                    name.toLowerCase().includes(searchTerm.toLowerCase())
+                )
+                .sort((a, b) => {
+                    if (currentSortOrder === 'asc') {
+                        return a[0].localeCompare(b[0]);
+                    } else {
+                        return b[0].localeCompare(a[0]);
+                    }
+                });
+
+            // Toggle sort order when clicking the search bar
+            document.querySelector('.search-bar').addEventListener('click', () => {
+                currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+                filterCocktails(searchTerm, data);
+            });
+
+            filteredCocktails.forEach(([cocktailName, cocktailData]) => {
+                const cocktailCard = document.createElement('div');
+                cocktailCard.className = 'cocktail-card';
+                
+                cocktailCard.innerHTML = ` 
+                    <div class="cocktail-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2647/2647998.png" class="icon" alt="Koktel sklenica">
+                        <span class="cocktail-name">${cocktailName}</span>
+                    </div>
+                    
+                    <div class="cocktail-info">
+                        <h3>Sezona: ${cocktailData.sezona}</h3>
+                        <h3>Kozarec: ${cocktailData.kozarec}</h3>
+                        <h3>Metoda: ${cocktailData.metoda}</h3>
+                        <h3>Led: ${cocktailData.led}</h3>
+                        <h3>Dekoracija: ${cocktailData.dekoracija}</h3>
+                        
+                        <h3>Sestavine:</h3>
+                        <ul class="ingredients-list">
+                            ${Object.entries(cocktailData.recept).map(([ingredient, amount]) => 
+                                `<li>${ingredient}: ${amount}</li>`
+                            ).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="preparation-steps">
+                        <h3>Priprava:</h3>
+                        <p>${cocktailData.priprava}</p>
+                    </div>
+                `;
+                
+                cocktailGrid.appendChild(cocktailCard);
+            });
+        }
+
+        // Naloži koktelje ko se stran naloda
+        window.onload = loadCocktails;
+    </script>
+</body>
+</html>
