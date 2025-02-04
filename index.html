@@ -30,7 +30,7 @@
 
         .header-container {
             position: relative;
-            height: 300px;
+            height: 80vh; /* Changed to viewport height for better responsiveness */
             background-image: url('/images/image1.jpg');
             background-size: cover;
             background-position: center;
@@ -38,6 +38,7 @@
             box-shadow: 0 8px 30px rgba(0,0,0,0.12);
             border-radius: 0 0 15px 15px;
             overflow: hidden;
+            background-color: #333; /* Fallback color if image doesn't load */
         }
 
         .header-container::after {
@@ -181,6 +182,17 @@
             height: 35px;
             margin-right: 1rem;
             object-fit: cover;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-container {
+                height: 60vh; /* Reduced height for mobile devices */
+            }
+
+            .header-container h1 {
+                font-size: 2.5rem; /* Smaller font size for mobile */
+            }
         }
     </style>
 </head>
