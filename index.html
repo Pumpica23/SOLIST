@@ -184,7 +184,6 @@
             object-fit: cover;
             
         }
-    
         .login-form {
     display: none;
     width: 90%;
@@ -196,7 +195,6 @@
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
     position: relative;
     z-index: 1000;
-    height: fit-content;
 }
 
 .login-form.active {
@@ -267,24 +265,10 @@
 /* Mobile-specific adjustments */
 @media (max-width: 480px) {
     .login-form {
-        width: 100%;
-        max-width: 100%;
-        padding: 1rem;
-        margin: 0;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        z-index: 1000;
-    }
-
-    .login-form.active {
-        display: flex;
+        width: 95%;
+        max-width: 400px;
+        padding: 1.5rem;
+        margin: 1rem auto;
     }
 
     .login-form h2 {
@@ -293,7 +277,7 @@
     }
 
     .form-group {
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     .form-group label {
@@ -301,28 +285,17 @@
     }
 
     .form-group input {
-        padding: 0.6rem;
-        font-size: 0.9rem;
-        width: 90%;
-        margin: 0 auto;
+        padding: 0.7rem;
+        font-size: 0.95rem;
     }
 
     .login-button {
-        padding: 0.9rem;
-        font-size: 0.9rem;
-        width: 90%;
-        margin: 0 auto;
+        padding: 1rem;
+        font-size: 1rem;
     }
 
     .error-message {
-        font-size: 0.8rem;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .container {
-        position: relative;
-        z-index: 999;
+        font-size: 0.85rem;
     }
 }
     </style>
