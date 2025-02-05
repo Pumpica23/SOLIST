@@ -182,10 +182,96 @@
             height: 35px;
             margin-right: 1rem;
             object-fit: cover;
+            
+        }
+        .login-form {
+            display: none;
+            width: 90%;
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .login-form.active {
+            display: block;
+        }
+
+        .login-form h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .error-message {
+            color: #ff4444;
+            margin-top: 0.5rem;
+            text-align: center;
+            display: none;
         }
     </style>
 </head>
 <body>
+    <div class="login-form" id="loginForm">
+        <h2>Prijava</h2>
+        <form id="login">
+            <div class="form-group">
+                <label for="username">Uporabniško ime:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Geslo:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+            <button type="submit" class="login-button">Prijavi se</button>
+        </form>
+    </div>
+
     <div class="container">
         <div class="header-container">
             <h1>KOKTEJL RECEPTI</h1>
@@ -198,6 +284,62 @@
     </div>
 
     <script>
+          const users = {
+            'admin': '148',
+            'Primoz': 'P',
+            'Marko': 'M',
+            'Brane': 'B',
+            'Kristina': 'K',
+            'Sven': 'S',
+            'Matic': 'M',
+            'Anastazija': 'A',
+            'David': 'D',
+            'Lana': 'L',
+            'Julija': 'J',
+            'Maddy': 'M',
+            'Viktor': 'V',
+        };
+
+        // Show login form on page load
+        document.getElementById('loginForm').classList.add('active');
+        document.querySelector('.container').style.display = 'none';
+
+        // Login validation
+        document.getElementById('login').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (users[username] && users[username] === password) {
+                // Hide login form and show main content
+                document.getElementById('loginForm').classList.remove('active');
+                document.querySelector('.container').style.display = 'block';
+                errorMessage.style.display = 'none';
+                
+                // Optional: Store login state
+                localStorage.setItem('isLoggedIn', 'true');
+            } else {
+                errorMessage.textContent = 'Napačno uporabniško ime ali geslo.';
+                errorMessage.style.display = 'block';
+            }
+        });
+
+        // Optional: Check login state on page reload
+        window.onload = function() {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                document.getElementById('loginForm').classList.remove('active');
+                document.querySelector('.container').style.display = 'block';
+            }
+        };
+
+        // Add logout functionality
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            document.getElementById('loginForm').classList.add('active');
+            document.querySelector('.container').style.display = 'none';
+        }
+
         let currentSortOrder = 'asc';
         
         async function loadCocktails() {
