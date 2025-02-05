@@ -185,74 +185,119 @@
             
         }
         .login-form {
-            display: none;
-            width: 90%;
-            max-width: 500px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: var(--card-bg);
-            border-radius: 15px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
+    display: none;
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    position: relative;
+    z-index: 1000;
+}
 
-        .login-form.active {
-            display: block;
-        }
+.login-form.active {
+    display: block;
+}
 
-        .login-form h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
+.login-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
+.form-group {
+    margin-bottom: 1.5rem;
+}
 
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text-color);
-        }
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
 
-        .form-group input {
-            width: 100%;
-            padding: 0.8rem;
-            border: 2px solid var(--primary-color);
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            outline: none;
-        }
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+}
 
-        .form-group input:focus {
-            border-color: var(--secondary-color);
-            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
-        }
+.form-group input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+}
 
-        .login-button {
-            width: 100%;
-            padding: 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+.login-button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-sizing: border-box;
+}
 
-        .login-button:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-        }
+.login-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
 
-        .error-message {
-            color: #ff4444;
-            margin-top: 0.5rem;
-            text-align: center;
-            display: none;
-        }
+.error-message {
+    color: #ff4444;
+    margin-top: 0.5rem;
+    text-align: center;
+    display: none;
+    font-size: 0.9rem;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    .login-form {
+        width: 95%;
+        max-width: 400px;
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+
+    .form-group input {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+
+    .login-button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .error-message {
+        font-size: 0.85rem;
+    }
+}
     </style>
 </head>
 <body>
