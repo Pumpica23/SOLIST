@@ -1,151 +1,155 @@
 {
-  "Crazy Santa": {
-    "sezona": "zima",
-    "kozarec": "whiskey",
-    "metoda": "shaken",
-    "led": "velika kocka",
-    "dekoracija": "kot v receptu",
-    "recept": {
-      "Jameson": "4 cl",
-      "Limonin sok": "2 cl",
-      "Sladkorni sirup": "2 cl",
-      "Cabernet Sauvignon": "4 cl"
+  "zima": {
+    "Crazy Santa": {
+      "sezona": "zima",
+      "kozarec": "whiskey",
+      "metoda": "shaken",
+      "led": "velika kocka",
+      "dekoracija": "kot v receptu",
+      "recept": {
+        "Jameson": "4 cl",
+        "Limonin sok": "2 cl",
+        "Sladkorni sirup": "2 cl",
+        "Cabernet Sauvignon": "4 cl"
+      },
+      "priprava": "Vse sestavine razen Cabernet Sauvignona pretresi z ledom, precedi v kozarec, plast Cabernet Sauvignona nalij s pomočjo žlice, okrasi z dehidrirano pomarančo."
     },
-    "priprava": "Vse sestavine razen Cabernet Sauvignona pretresi z ledom, precedi v kozarec, plast Cabernet Sauvignona nalij s pomočjo žlice, okrasi z dehidrirano pomarančo."
+    "Gentleman Sour": {
+      "sezona": "zima",
+      "kozarec": "visok zimski kozarec",
+      "metoda": "vroče",
+      "led": "brez",
+      "dekoracija": "dehidrirana pomaranča",
+      "recept": {
+        "Martel VSOP": "3 cl",
+        "Havana 7": "3 cl",
+        "Limonin sok": "3 cl",
+        "Sladkorni sirup": "3 cl",
+        "Naravni jabolčni sok": "2 cl",
+        "Vrela voda": "10 cl",
+        "Klinčki": "2 kosa"
+      },
+      "priprava": "Vse sestavine nalij v servirni kozarec, dolij vrelo vodo, okrasi in postrezi."
+    },
+    "Penicilin": {
+      "sezona": "zima",
+      "kozarec": "whiskey",
+      "metoda": "shaken",
+      "led": "velika kocka",
+      "dekoracija": "kot v receptu",
+      "recept": {
+        "Four Roses": "4 cl",
+        "Limonin sok": "2 cl",
+        "Medeni sirup": "2 cl",
+        "Ingverjevo pivo": "10 cl",
+        "Kandiran ingver": "okrasek",
+        "Limonina lupina": "okrasek"
+      },
+      "priprava": "Vse sestavine razen ingverjevega piva pretresi z ledom, precedi v kozarec, dolij ingverjevo pivo, okrasi s kandiranim ingverjem na bambusovi palčki."
+    },
+    "Bombardino": {
+      "sezona": "zima",
+      "kozarec": "zimski kozarec",
+      "metoda": "vroče",
+      "led": "brez",
+      "dekoracija": "kot v receptu",
+      "recept": {
+        "Bombardino": "5 cl",
+        "Smetana": "okrasek",
+        "Cimet": "po vrhu"
+      },
+      "priprava": "Segrej bombardino s pomočjo parne šobe (očisti za seboj), nalij v kozarec, dodaj smetano, okrasi in postrezi."
+    }
   },
-  "Gentleman Sour": {
-    "sezona": "zima",
-    "kozarec": "visok zimski kozarec",
-    "metoda": "vroče",
-    "led": "brez",
-    "dekoracija": "dehidrirana pomaranča",
-    "recept": {
-      "Martel VSOP": "3 cl",
-      "Havana 7": "3 cl",
-      "Limonin sok": "3 cl",
-      "Sladkorni sirup": "3 cl",
-      "Naravni jabolčni sok": "2 cl",
-      "Vrela voda": "10 cl",
-      "Klinčki": "2 kosa"
+  "poletje": {
+    "Midnight Mojito": {
+      "sezona": "poletje",
+      "kozarec": "High Ball",
+      "metoda": "muddled",
+      "led": "kocke",
+      "dekoracija": "črna Robida, Meta",
+      "recept": {
+        "La hachichera Banana Rum": "4 cl",
+        "Creme de casis": "2 cl",
+        "Banana pire": "1 cl",
+        "Mure pire": "1 cl",
+        "Limete": "4 wedge",
+        "Rjavi sladkor": "1 žlica",
+        "Meta": "5 listov",
+        "Radenska": "top"
+      },
+      "priprava": "V kozarcu zmelodi 4 wedge lime in 1 žlico rjavega sladkorja. Dodaj 5 listov mete, vse alkoholne sestavine in led. Premešaj, dolij Radensko, okrasi s črno robido in meto."
     },
-    "priprava": "Vse sestavine nalij v servirni kozarec, dolij vrelo vodo, okrasi in postrezi."
-  },
-  "Penicilin": {
-    "sezona": "zima",
-    "kozarec": "whiskey",
-    "metoda": "shaken",
-    "led": "velika kocka",
-    "dekoracija": "kot v receptu",
-    "recept": {
-      "Four Roses": "4 cl",
-      "Limonin sok": "2 cl",
-      "Medeni sirup": "2 cl",
-      "Ingverjevo pivo": "10 cl",
-      "Kandiran ingver": "okrasek",
-      "Limonina lupina": "okrasek"
+    "Ramazotti Rosato SPRITZ": {
+      "sezona": "poletje",
+      "kozarec": "gost kozarec",
+      "metoda": "mešanje",
+      "led": "kocke",
+      "dekoracija": "Barulica listi",
+      "recept": {
+        "Ramazzotti Rosato": "5 cl",
+        "Hišna Penina": "10 cl",
+        "Barulica listi": "2-4 kom"
+      },
+      "priprava": "Na dno kozarca dodaj barulico liste, dodaj led, odmeri sestavine in nežno premešaj (da ohraniš mehurčke)."
     },
-    "priprava": "Vse sestavine razen ingverjevega piva pretresi z ledom, precedi v kozarec, dolij ingverjevo pivo, okrasi s kandiranim ingverjem na bambusovi palčki."
-  },
-  "Bombardino": {
-    "sezona": "zima",
-    "kozarec": "zimski kozarec",
-    "metoda": "vroče",
-    "led": "brez",
-    "dekoracija": "kot v receptu",
-    "recept": {
-      "Bombardino": "5 cl",
-      "Smetana": "okrasek",
-      "Cimet": "po vrhu"
+    "Rožmarin Gin & Tonic": {
+      "sezona": "poletje",
+      "kozarec": "copa de balon",
+      "metoda": "muddle-stir",
+      "led": "kocke",
+      "dekoracija": "v recepturi (rožmarin, limeta)",
+      "recept": {
+        "Beefeater gin": "5 cl",
+        "Tonik water": "10 cl",
+        "Limeta": "2 wedge",
+        "Rožmarin": "1 vejica"
+      },
+      "priprava": "Limete pazljivo zmelodi, odmeri gin, natoči tonik vodo. Rožmarin vloži med led in nežno premešaj."
     },
-    "priprava": "Segrej bombardino s pomočjo parne šobe (očisti za seboj), nalij v kozarec, dodaj smetano, okrasi in postrezi."
+    "Tom Collins": {
+      "sezona": "poletje",
+      "kozarec": "Long drink",
+      "metoda": "shaken",
+      "led": "kocke",
+      "dekoracija": "limona, češnja",
+      "recept": {
+        "Gin Beefeater": "4 cl",
+        "Limonin sok": "3 cl",
+        "Sladkorni sirup": "2 cl",
+        "Radenska": "top"
+      },
+      "priprava": "V shaker dodaj sestavine (razen Radenske) in led. Pretresi, precedi v kozarec, dolij Radensko in okrasi."
+    },
+    "Tom Collins FRUIT JAGODA": {
+      "sezona": "poletje",
+      "kozarec": "Long drink",
+      "metoda": "shaken",
+      "led": "kocke",
+      "dekoracija": "limona, češnja",
+      "recept": {
+        "Gin Beefeater": "4 cl",
+        "Limonin sok": "3 cl",
+        "Fruty mix JAGODA": "2 cl",
+        "Radenska": "top"
+      },
+      "priprava": "V shaker dodaj sestavine (razen Radenske) in led. Pretresi, precedi v kozarec, dolij Radensko in okrasi."
+    },
+    "Virgin Mojito": {
+      "sezona": "poletje",
+      "kozarec": "hawana",
+      "metoda": "build, muddled",
+      "led": "kocke",
+      "dekoracija": "suha limeta",
+      "recept": {
+        "Limeta": "4 wedge",
+        "Sladkor": "1 žlica",
+        "Meta listi": "4-6 kom",
+        "Sprite": "top",
+        "Radenska": "splash",
+        "Limetin sok ali pire": "3 cl (po potrebi za balance)"
+      },
+      "priprava": "V kozarcu dobro zmelodi limeto in sladkor. Dodaj meto in nežno zmelodi. Dodaj led, sestavine in dobro premešaj. Po potrebi dodaj še led."
+    }
   }
-},
- "Midnight Mojito": {
-    "sezona": "poletje",
-    "kozarec": "High Ball",
-    "metoda": "muddled",
-    "led": "kocke",
-    "dekoracija": "črna Robida, Meta",
-    "recept": {
-      "La hachichera Banana Rum": "4 cl",
-      "Creme de casis": "2 cl",
-      "Banana pire": "1 cl",
-      "Mure pire": "1 cl",
-      "Limete": "4 wedge",
-      "Rjavi sladkor": "1 žlica",
-      "Meta": "5 listov",
-      "Radenska": "top"
-    },
-    "priprava": "V kozarcu zmelodi 4 wedge lime in 1 žlico rjavega sladkorja. Dodaj 5 listov mete, vse alkoholne sestavine in led. Premešaj, dolij Radensko, okrasi s črno robido in meto."
-  },
-  "Ramazotti Rosato SPRITZ": {
-    "sezona": "poletje",
-    "kozarec": "gost kozarec",
-    "metoda": "mešanje",
-    "led": "kocke",
-    "dekoracija": "Barulica listi",
-    "recept": {
-      "Ramazzotti Rosato": "5 cl",
-      "Hišna Penina": "10 cl",
-      "Barulica listi": "2-4 kom"
-    },
-    "priprava": "Na dno kozarca dodaj barulico liste, dodaj led, odmeri sestavine in nežno premešaj (da ohraniš mehurčke)."
-  },
-  "Rožmarin Gin & Tonic": {
-    "sezona": "poletje",
-    "kozarec": "copa de balon",
-    "metoda": "muddle-stir",
-    "led": "kocke",
-    "dekoracija": "v recepturi (rožmarin, limeta)",
-    "recept": {
-      "Beefeater gin": "5 cl",
-      "Tonik water": "10 cl",
-      "Limeta": "2 wedge",
-      "Rožmarin": "1 vejica"
-    },
-    "priprava": "Limete pazljivo zmelodi, odmeri gin, natoči tonik vodo. Rožmarin vloži med led in nežno premešaj."
-  },
-  "Tom Collins": {
-    "sezona": "poletje",
-    "kozarec": "Long drink",
-    "metoda": "shaken",
-    "led": "kocke",
-    "dekoracija": "limona, češnja",
-    "recept": {
-      "Gin Beefeater": "4 cl",
-      "Limonin sok": "3 cl",
-      "Sladkorni sirup": "2 cl",
-      "Radenska": "top"
-    },
-    "priprava": "V shaker dodaj sestavine (razen Radenske) in led. Pretresi, precedi v kozarec, dolij Radensko in okrasi."
-  },
-  "Tom Collins FRUIT JAGODA": {
-    "sezona": "poletje",
-    "kozarec": "Long drink",
-    "metoda": "shaken",
-    "led": "kocke",
-    "dekoracija": "limona, češnja",
-    "recept": {
-      "Gin Beefeater": "4 cl",
-      "Limonin sok": "3 cl",
-      "Fruty mix JAGODA": "2 cl",
-      "Radenska": "top"
-    },
-    "priprava": "V shaker dodaj sestavine (razen Radenske) in led. Pretresi, precedi v kozarec, dolij Radensko in okrasi."
-  },
-  "Virgin Mojito": {
-    "sezona": "poletje",
-    "kozarec": "hawana",
-    "metoda": "build, muddled",
-    "led": "kocke",
-    "dekoracija": "suha limeta",
-    "recept": {
-      "Limeta": "4 wedge",
-      "Sladkor": "1 žlica",
-      "Meta listi": "4-6 kom",
-      "Sprite": "top",
-      "Radenska": "splash",
-      "Limetin sok ali pire": "3 cl (po potrebi za balance)"
-    },
-    "priprava": "V kozarcu dobro zmelodi limeto in sladkor. Dodaj meto in nežno zmelodi. Dodaj led, sestavine in dobro premešaj. Po potrebi dodaj še led."
-  }
+}
