@@ -148,4 +148,75 @@
     },
     "priprava": "V kozarcu dobro zmelodi limeto in sladkor. Dodaj meto in nežno zmelodi. Dodaj led, sestavine in dobro premešaj. Po potrebi dodaj še led."
   }
+  "Ramazotti Rosato TONIC": {
+    "sezona": "poletje",
+    "kozarec": "gost kozarec",
+    "metoda": "build",
+    "led": "kocke",
+    "dekoracija": "lime aike",
+    "recept": {
+      "Ramazotti Rosato": "5 cl",
+      "Tonic Water": "10 cl",
+      "Limeta": "2 wedge"
+    },
+    "priprava": "Stisni limeto v kozarec, dodaj led, odmeri sestavine in nežno premešaj (ohrani mehurčke)."
+  },
+  "Tequila Sunrise": {
+    "sezona": "poletje",
+    "kozarec": "visok kozarec",
+    "metoda": "build",
+    "led": "kocke",
+    "dekoracija": "grenadine plast",
+    "recept": {
+      "Tequila Silver": "4 cl",
+      "Limonin sok": "1 cl",
+      "Pomarancni sok": "8 cl",
+      "Grenadine sirup": "1 cl"
+    },
+    "priprava": "V kozarec z ledom dodaj vse sestavine razen grenadine in premešaj. Grenadino previdno nalij po žlici za plast, okrasi."
+  },
+  "Tom Collins FRUIT": {
+    "sezona": "poletje",
+    "kozarec": "Long drink",
+    "metoda": "shaken",
+    "led": "kocke",
+    "dekoracija": "limona, češnja",
+    "recept": {
+      "Gin Beefeater": "4 cl",
+      "Limonin sok": "3 cl",
+      "Sladkorni sirup": "2 cl",
+      "Sadni pire": "2 cl",
+      "Radenska": "top"
+    },
+    "priprava": "V shaker dodaj sestavine (razen Radenske) in led. Pretresi, precedi v kozarec, dolij Radensko in okrasi."
+  },
+  "White Russian": {
+    "sezona": "zima",
+    "kozarec": "gost kozarec",
+    "metoda": "build",
+    "led": "kocke",
+    "dekoracija": "smetana plast",
+    "recept": {
+      "Vodka Absolut": "4 cl",
+      "Kahlua": "2 cl",
+      "Smetana": "plast"
+    },
+    "priprava": "V kozarec z ledom dodaj Kahlua in vodko, premešaj. Smetano nežno nalij po žlici za plastni učinek."
+  },
+  "Virgin Fruit Mojito": {
+    "sezona": "poletje",
+    "kozarec": "hawana",
+    "metoda": "muddled",
+    "led": "kocke",
+    "dekoracija": "limeta, meta",
+    "recept": {
+      "Limeta": "3 wedge",
+      "Sladkor": "1 žlica",
+      "Meta listi": "4 kom",
+      "Sadni pire": "2 cl",
+      "Sprite": "top",
+      "Radenska": "splash"
+    },
+    "priprava": "V kozarcu dobro zmelodi limeto in sladkor. Dodaj meto in nežno zmelodi. Dodaj led, sestavine in dobro premešaj. Po potrebi dodaj še led."
+  }
 }
